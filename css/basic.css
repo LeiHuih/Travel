@@ -1,0 +1,114 @@
+@charset "utf-8";
+/*每个页面都要使用的头部也尾部的样式单独建立一个css文件 避免加载冗余*/
+body,h1,h2,h3,ul,ol,p,figure {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff; /*ie浏览器背景色*/
+}
+ul,ol{
+    list-style: outside none none;
+}
+a {
+    text-decoration: none;
+}
+.none {
+    display: none;
+}
+
+/*【头部】*/
+#header {
+    width: 100%;
+    min-width: 1263px; /*网页最小宽度*/
+    height: 70px;
+    background-color: #333;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);/*增加header与search图片相连部分的阴影*/
+    position: relative;
+    z-index: 9999;
+}
+#header .center {
+    width: 1263px;
+    height: 70px;
+    margin: 0 auto;
+}
+/*头部的文字部分*/
+#header .logo {
+    width: 240px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    text-indent: -9999px;  /*将行缩进-9999个像素 隐藏文字*/
+    float: left;/*1*/
+}
+#header .link {
+    width: 650px; /*五个li的大小 120*5 */
+    height: 70px;
+    line-height: 70px;/*行高 文字垂直居中*/
+    color: #eee;
+    float: right;/*3     123一起使得文字浮动到logo同行并居于右边*/
+}
+#header .link li {
+    width: 120px;
+    text-align: center; /*文字水平居中*/
+    float: left;/*2*/
+}
+/*头部的超链接部分*/
+#header .link a {
+    color: #eee;
+    display: block; /*把元素显示为一个块元素 使得鼠标在字体周围也可点击*/
+}
+/*鼠标放上去的颜色，#nav .active a 默认选中第一个链接 时的颜色*/
+#header .link a:hover, #header .active a {
+    background-color: #000;
+}
+
+/*【footer底部】*/
+#footer{
+    height: 360px;
+    background-color: #222;
+    clear: both;  /*清除footer浮动效果 让中间内容部分自适应*/
+    position: relative; /*进行相对定位 并向下移动20px 使得中间内容部分与footer部分右间隔*/
+    top: 20px;
+}
+/*footer底部上半部*/
+#footer .top{
+    width: 1263px;
+    height: 281px;
+    /*background-color: #59b200;*/
+    text-align: center;/* left center right 居中*/
+    margin: 0 auto;/*top居中*/
+}
+/*left center right样式相同 合成一个*/
+#footer .block{
+    width: 410px;
+    height: 280px;
+    color: #ccc;
+    /*float: left;            方法一*/
+    display: inline-block;  /*方法二 设置为内联 显示在一行*/
+    text-align: left;/*文字居左*/
+    vertical-align: top;/*强制 h2垂直居于顶部*/
+}
+#footer h2{
+    font-size: 24px;
+    font-weight: normal;
+    padding: 20px 0 0 20px;
+}
+#footer hr{
+    width: 90%;
+    border: 1px dashed #333;/* 简写属性在一个声明设置所有的边框属性 1像素 虚线 */
+}
+#footer ul{
+    font-size: 18px;
+    color: #777;
+    text-indent: 20px;
+    line-height: 2;
+}
+/*footer底部下半部*/
+#footer .button{
+    height: 80px;
+    background-color: #000;
+    line-height: 80px;
+    text-align: center;/*文字居中*/
+    color: #777;
+    border-top: 1px solid #444; /*footer底部上半部与下半部之间加实线*/
+}

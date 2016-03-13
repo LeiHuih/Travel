@@ -1,0 +1,137 @@
+@charset "utf-8";
+/*首页css样式*/
+
+/*【搜索栏图片部分】*/
+#search {
+    width: 100%;
+    min-width: 1263px; /*网页最小宽度*/
+    height: 600px;
+    background: url(../images/search.jpg) no-repeat center;
+    position: relative; /*把centers的父元素进行相对点*/
+}
+
+/*搜索栏的搜索框部分*/
+#search .center {
+    width: 600px;
+    height: 60px;
+    background-color: #000;
+    position: absolute; /*元素进行绝对点*/
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -300px;
+    opacity: 0.6; /*透明化*/
+    border-radius: 10px; /*圆角*/
+}
+#search .search {
+    width: 446px;
+    height: 52px;
+    background-color: #eee;
+    position: absolute; /*元素进行绝对点*/
+    top: 50%;
+    left: 50%;
+    margin: -27px 0 0 -296px;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 0 10px;
+    outline: none; /*点击是出现焦点外边框*/
+}
+#search .button {
+    width: 120px;
+    height: 54px;
+    background-color: #eee;
+    position: absolute; /*元素进行绝对点*/
+    top: 50%;
+    left: 50%;
+    margin: -27px 0 0 175px;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 10px;
+    font-size: 24px;
+    outline: none;
+    cursor: pointer;/*鼠标放上出现手形*/
+    font-weight: bold;/*字体加粗*/
+}
+
+
+/*【tour 旅游部分】*/
+#tour {
+    width: 1263px;
+    height: 1150px;
+    /*background-color: #ccc;*/
+    margin: 30px auto;
+    text-align: center; /*对旅游标题下的景点图片部分进行居中*/
+}
+/*tour 旅游标题部分*/
+#tour .center h2 {
+    font-size: 45px;
+    letter-spacing: 2px;/*字体距离*/
+    color: #666;
+    margin: 10px 0;
+}
+#tour .center p {
+    color: #666;
+    margin: 10px 0;
+}
+
+/*tour 旅游标题下的景点图片部分*/
+#tour figure {
+    border: 1px solid #ddd;
+    display: inline-block; /*应用此特性的元素呈现为内联对象，周围元素保持在同一行，但可以设置宽度和高度地块元素的属性*/
+    padding: 4px;
+    border-radius: 4px;/*圆角*/
+    margin: 15px 12px;
+    width: 380px; /*限制画布的大小*/
+    text-align: left;/*文字水平居左*/
+    position: relative;
+}
+/*#tour figure img{*/
+    /*vertical-align: middle;/!*把图片进行垂直对其方式设为居中*!/*/
+/*}*/
+#tour.info{
+    padding: 5px 0 0 0;
+}
+
+#tour figcaption{
+    color: #777;
+    line-height: 1.5;/*行高*/
+    letter-spacing: 1px;/*字体距离*/
+    font-size: 14px;
+    padding: 7px 0 5px 0;
+}
+#tour .title {
+    color: #333;
+    font-weight: normal;
+}
+#tour .sat {
+    float: right;
+    font-size: 13px;
+    color: #999;
+    font-style: normal;/*字体不倾斜*/
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+#tour .price {
+    color: #f60;
+    font-size: 14px;
+}
+#tour .price strong {
+    font-size: 20px;
+    letter-spacing: 1px; /*字体距离*/
+}
+#tour .type {
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #59b200;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+

@@ -1,0 +1,471 @@
+@charset "utf-8";
+
+/*旅游咨询页css样式*/
+#headerline{
+    width: 100%;
+    min-width: 1263px; /*网页最小宽度*/
+    height: 300px;
+    background: linear-gradient(to right bottom,rgba(0,0,0,0.7),rgba(0,0,0,0)),url(../images/headline.jpg) no-repeat center;
+}
+#headerline center{
+    width: 1263px;
+    height: 300px;
+    margin: 0 auto;/*把headline.jpg位置固定*/
+}
+#headerline hgroup{
+    padding: 100px 0 0 50px;
+}
+#headerline h2{
+    color: #eee;
+    font-size: 36px;
+    /*letter-spacing: 1px;/!*字体间隔*!/*/
+}
+#headerline h3{
+    color: #eee;
+    font-size: 20px;
+    /*letter-spacing: 1px;*/
+}
+
+
+#container{
+    width: 1263px;
+    /*height: 1220px;*/
+    margin: 30px auto;
+}
+     /*【右侧栏部分】*/
+#container .sidebar {
+    width: 340px;
+    /*height: 1200px;*/
+    /*background-color: #59b200;*/
+    float: right;
+}
+#container .sidebox{
+    border: 1px solid #eee;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#container .sidebox h2{
+    font-size: 20px;
+    font-weight: normal;/*字体不加粗*/
+    letter-spacing: 1px;/*字符间距*/
+    text-indent: 8px;/*缩进行*/
+    height: 40px;
+    line-height: 40px;/*行高*/
+    background-color: #fafafa;
+    text-align: left;
+    color: #666;
+}
+/*景点推荐部分*/
+#container .tag{
+    padding: 10px 0;
+}
+#container .tag li{
+    display: inline-block;/*把内联元素转换为块元素*/
+    background-color: #eee;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin: 2px 0;
+    text-align: left;
+    text-indent: 8px;
+
+}
+#container .tag a{
+    /*如果li的父元素是区块 已有宽和高 那a的block会直接包含 不会被li的父元素干扰*/
+    display: block;
+    color: #999;
+}
+#container .tag a:hover{
+    background-color: #458b00;
+    color: #fff;
+}
+/*热门旅游部分*/
+#container .figure{
+    padding: 10px 0;
+}
+#container figure{
+    display: inline-block;
+    padding: 4px;
+    color: #666;
+}
+
+/*旅游百宝箱部分*/
+#container .box{
+    padding: 10px 0;
+}
+#container .box a{
+    display: inline-block;/*把内联元素转换为块元素*/
+    background-color: #eee;
+    width: 150px;
+    height: 40px;
+    line-height: 35px;
+    margin: 2px 0;
+    color: #999;
+    text-align: left;
+    text-indent: 35px;
+}
+/*#container .box a:hover{*/
+    /*background-color: #458b00;*/
+    /*color: #fff;*/
+/*}*/
+/*旅游百宝箱小图标部分*/
+#container .box a.trea1 {
+    background: #eee url(../images/trea1.png) no-repeat 10px center;
+}
+#container .box a.trea2 {
+    background: #eee url(../images/trea2.png) no-repeat 10px center;
+}
+#container .box a.trea3 {
+    background: #eee url(../images/trea3.png) no-repeat 10px center;
+}
+#container .box a.trea4 {
+    background: #eee url(../images/trea4.png) no-repeat 10px center;
+}
+
+
+    /*【左侧栏部分】*/
+#container .list {
+    width: 900px;
+    /*height: 1200px;*/
+    /*background-color: #ff6600;*/
+    float: left;
+}
+
+/*左侧栏上  左部分*/
+#container .infor{
+    height: 45px;
+    line-height: 45px;
+    background-color: #eee;
+    margin: 0 0 20px 0 ;
+}
+#container .information .left{
+    display: inline-block;
+    /*background-color: #809;*/
+    float: left;
+}
+#container .information.left li{
+    display: inline-block;
+    /*background-color: cornflowerblue;*/
+    width: 150px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+}
+#container .information .left a{
+    color: #666;
+}
+#container .information .left li:first-child{
+    background-color: #fff;
+    border-top: 2px solid #458b00;
+    position: relative;
+    left: 1px;
+}
+
+
+/*左侧栏上  右部分*/
+#container .information .right {
+    display: inline-block;
+    padding: 0 20px 0 0;
+    float: right;
+}
+#container .information .right li {
+    display: inline-block;
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+#container .information .right a {
+    padding: 3px 8px;
+    color: #666;
+}
+#container .information .right a.selected, #container .information .right a:hover {
+    background-color: #458b00;
+    color: #fff;
+}
+
+/*左侧栏下部分   旅游信息部分*/
+#container .tour {
+    width: 910px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    /*background-color: #ccc;*/
+    border: 2px solid #eee;
+    position: relative;
+}
+#container .tour img {
+    float: left;
+}
+#container .tour figcaption{
+    width: 528px;
+    height: 230px;
+    /*background-color: #458b00;*/
+    float: right;
+}
+
+#container .tour hgroup{
+    width: 300px;
+}
+#container .tour h2{
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+    padding: 10px 0 10px 25px;
+}
+#container .tour h3{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    font-weight: normal;
+    padding: 10px 0 10px 25px;
+}
+#container .tour ol{
+    color: #666;
+    line-height: 2;
+    padding: 0 0 0 25px;
+}
+#container .tour mark{
+    background-color: #fff;
+    border: 1px solid #458b00;
+    border-radius: 4px;/*  圆角  */
+    padding: 0 5px;
+    color: #458b00;
+}
+#container .tour .buy{
+    position: absolute;
+    top: 55px;
+    right: 30px;
+}
+#container .tour .price{
+    font-size: 20px;
+    color: #f60;
+}
+#container .tour .price{
+    font-size: 36px;
+}
+#container .tour .price s{
+    font-size: 16px;
+    color: #999;
+}
+#container .tour .reserve{
+    margin: 10px 0 0 0;
+}
+#container .tour .reserve a{
+    display: block;
+    width: 152px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f60;
+    border-radius: 4px;
+}
+#container .tour .type {
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #59b200;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#container .tour .disc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    background: url(../images/disc.png) no-repeat;
+}
+#container .tour .disc span {
+    display: block;
+    transform: rotate(45deg); /*旋转45度*/
+    width: 52px;
+    height: 52px;
+    padding: 5px 0 0 0;
+    text-indent: 7px;
+    font-size: 14px;
+    color: #ff7a4d;
+}
+#container .tour footer{
+    width: 528px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;/*间距*/
+    text-indent: 25px;/*首行缩进*/
+    background-color: #fafafa;
+    color: #666;
+    position: absolute; /*给tour relative相对点定位 在footer进行绝对点定位 底部为0*/
+    bottom: 0;
+}
+#container .tour time{
+    color: #458b00;
+}
+#container .information .more,#container .scenery .more{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;/*cursor：pointer设定鼠标的形状为一只伸出食指的手 default 箭头，crosshair 十字，progress 箭头*/
+    font-size: 18px;
+    color: #666;
+}
+
+
+
+/*【机票预订页面】*/
+#container .ticket,#container .scenery,#container .about{
+    color: #666;
+    font-size: 20px;
+}
+#container .ticket h2,#container .scenery h2,#container .about h2{
+    height: 40px;
+    line-height: 40px;
+    border: 1px dashed #999;
+    margin: 0 0 20px 0;
+    padding: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: normal;/*不加粗*/
+}
+#container .ticket .type{
+    margin: 20px 0 10px 0 ;
+}
+#container .ticket .type mark{
+    color: #fff;
+    background-color: #458b00;
+    padding: 5px 8px;
+    border-radius: 4px;/*圆角*/
+    margin: 0 10px 0 16px;
+}
+#container .ticket .left{
+    width: 43%;
+    display: inline-block;
+}
+#container .ticket .right{
+    width: 43%;
+    display: inline-block;
+}
+
+#container .ticket .button{
+    width: 9%;
+    display: inline-block;
+}
+#container .ticket .button .submit{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 4px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer; /*手型*/
+    position: relative; /*相对点*/
+    top: -28px;
+}
+#container .ticket .form p{
+    line-height: 3;
+}
+#container .ticket .form input {
+    width: 250px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0 0 0 16px;
+    font-size: 18px;
+}
+#container .ticket .new{
+    margin: 20px 0 0 0;
+}
+#container .ticket ul{
+    margin: 20px 0 0 0;
+}
+#container .ticket li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+#container .ticket li:first-child{
+    padding-left: 0;  /*第一个li左padding为0*/
+}
+#container .ticket li:nth-child(2){
+    background-color: #458b00;
+    color: #fff;
+    border-radius: 4px;
+}
+#container .ticket table {
+    margin: 20px 0 0 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;/*去掉填充*/
+}
+#container .ticket th {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+#container .ticket td {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;/*去掉竖线*/
+    text-align: center;
+}
+#container .ticket tr:nth-child(2n) {
+    background-color: #fafafa;
+}
+#container .ticket tr:hover {
+    background-color: #eee;
+}
+#container .ticket .price {
+    color: #f60;
+}
+#container .ticket .more {
+    color: #666;
+}
+#container .ticket .reserve{
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+#container .scenery figure {
+    border: 1px solid #ddd;
+    display: inline-block; /*应用此特性的元素呈现为内联对象，周围元素保持在同一行，但可以设置宽度和高度地块元素的属性*/
+    padding: 4px;
+    border-radius: 4px;/*圆角*/
+    margin: 15px 0 15px 0;
+    width: 435px; /*限制画布的大小*/
+    text-align: left;/*文字水平居左*/
+    /*position: relative;*/
+}
+#container .scenery figcaption {
+    text-align: center;
+    padding: 5px 0;
+}
+#container .about p {
+    line-height: 2;
+    margin: 20px 0;
+}
+#container .about address {
+    line-height: 1.6;
+    margin: 20px 0;
+    font-style: normal;
+}
